@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" InitialTargets="Publish" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="InitializePublish.proj" />
+
+  <Target Name="Publish" DependsOnTargets="InitializePublish">
+    <Message Text="********** Publish Begins **********" />
+
+    <Message Text="********** Publish Ends **********" />
+  </Target>
+
+  <!--<Target Name="PublishProjects" AfterTargets="Publish" Outputs="%(ProjectsToPublish.Identity)">
+    <Message Text="********** PublishProjects Begins **********" />
+
+    <MSBuild Projects="@(ProjectsToPublish)" Properties="OutputPath=$(BuildOutputDir)%(ProjectsToPublish.Name);OutDir=$(BuildOutputDir)%(ProjectsToPublish.Name)" StopOnFirstFailure="true" ContinueOnError="false" />
+
+    <Exec Command="XCOPY &quot;$(BuildOutputDir)%(ProjectsToPublish.Name)\*.*&quot; &quot;$(DropsDir)%(ProjectsToPublish.Name)\*.*&quot; /E /Y" />
+
+    <Message Text="********** PublishProjects Ends **********" />
+  </Target>-->
+
+  <Target Name="PublishWebProjects" AfterTargets="Publish" Outputs="%(WebProjectsToPublish.Identity)">
+    <Message Text="********** PublishWebProjects Begins **********" />
+
+    <MSBuild Projects="@(WebProjectsToPublish)" Properties="OutputPath=$(BuildOutputDir)%(WebProjectsToPublish.Name);OutDir=$(BuildOutputDir)%(WebProjectsToPublish.Name);DeployOnBuild=True" StopOnFirstFailure="true" ContinueOnError="false" />
+
+    <Exec Command="XCOPY &quot;$(BuildOutputDir)%(WebProjectsToPublish.Name)\*.*&quot; &quot;$(DropsDir)%(WebProjectsToPublish.Name)\*.*&quot; /E /Y" />
+
+    <Message Text="********** PublishWebProjects Ends **********" />
+  </Target>
+</Project>

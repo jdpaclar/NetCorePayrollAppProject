@@ -1,0 +1,7 @@
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\bin\Debug\netcoreapp1.1\Company.Common.Utilities.deps.json
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\bin\Debug\netcoreapp1.1\Company.Common.Utilities.dll
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\bin\Debug\netcoreapp1.1\Company.Common.Utilities.pdb
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Debug\netcoreapp1.1\Company.Common.Utilities.AssemblyInfo.cs
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Debug\netcoreapp1.1\Company.Common.Utilities.dll
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Debug\netcoreapp1.1\Company.Common.Utilities.pdb
+D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Debug\netcoreapp1.1\Company.Common.Utilities.csprojResolveAssemblyReference.cache

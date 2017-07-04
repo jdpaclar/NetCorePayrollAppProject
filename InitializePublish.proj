@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" InitialTargets="InitializePublish" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Target Name="InitializePublish">
+		<Message Text="********** InitializePublish Begins **********" />
+
+		<PropertyGroup>
+			<PublishProfile>$(PublishProfile)</PublishProfile>
+		</PropertyGroup>
+
+		<Error Condition="'$(PublishProfile)'==''" Text="Property 'PublishProfile' is undefined." />
+		<Message Text="***** PublishProfile: $(PublishProfile) *****" />
+
+		<PropertyGroup>
+			<!-- Place Environments Here -->
+			<Configuration Condition="'$(PublishProfile)'=='DEV'">DEV</Configuration>
+		</PropertyGroup>
+
+		<Error Condition="'$(Configuration)'==''" Text="Property 'Configuration' is undefined." />
+		<Message Text="***** Configuration: $(Configuration) *****" />
+
+		<PropertyGroup>
+			<SolutionDir Condition="'$(SolutionDir)'==''">$(MSBuildProjectDirectory)\</SolutionDir>
+		</PropertyGroup>
+		<Message Text="***** SolutionDir: $(SolutionDir) *****" />
+
+		<PropertyGroup>
+			<BuildOutputDir Condition="'$(OutDir)'==''">$(MSBuildProjectDirectory)\_BuildOutput\$(PublishProfile)\</BuildOutputDir>
+			<BuildOutputDir Condition="'$(OutDir)'!=''">$(OutDir)\_BuildOutput\$(PublishProfile)\</BuildOutputDir>
+		</PropertyGroup>
+
+		<Message Text="***** BuildOutputDir: $(BuildOutputDir) *****" />
+		<PropertyGroup>
+			<DropsDir Condition="'$(OutDir)'==''">$(MSBuildProjectDirectory)\_Drops\$(PublishProfile)\</DropsDir>
+			<DropsDir Condition="'$(OutDir)'!=''">$(OutDir)\_Drops\$(PublishProfile)\</DropsDir>
+		</PropertyGroup>
+		<Message Text="***** DropsDir: $(DropsDir) *****" />
+
+		<ItemGroup>
+
+			<!-- Projects To Publish Here -->
+
+			<!--<ProjectsToPublish Include="$(SolutionDir)Company.Website.Payroll\Company.Website.Payroll.csproj">
+				<Name>Company.Website.Payroll</Name>
+				<AdditionalProperties>
+					Configuration=$(Configuration)
+				</AdditionalProperties>
+			</ProjectsToPublish>-->
+    
+      <WebProjectsToPublish Include="$(SolutionDir)Company.Website.Payroll\Company.Website.Payroll.csproj">
+				<Name>Company.Website.Payroll</Name>
+				<AdditionalProperties>
+					Configuration=$(Configuration)
+				</AdditionalProperties>
+			</WebProjectsToPublish>
+		</ItemGroup>
+
+		<Message Text="********** InitializePublish Ends **********" />
+	</Target>
+</Project>

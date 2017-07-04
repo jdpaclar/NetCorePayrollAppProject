@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <Content Include="Controllers\Web\HomeController.cs" />
+    <Content Include="wwwroot\js\App\common\common.services.js" />
+    <Content Include="wwwroot\js\App\payrollApp.js" />
+    <Content Include="wwwroot\js\App\Payroll\payrollCtrl.js" />
+    <Content Include="wwwroot\js\App\Payroll\payrollResource.js" />
+    <Content Include="wwwroot\js\App\Payroll\payrollView.html" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Automapper" Version="6.1.1" />

@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj",
+      "projectUniqueName": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj",
       "projectName": "Company.Common.Utilities",
-      "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj",
-      "outputPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Common.Utilities\\obj\\",
+      "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj",
+      "outputPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

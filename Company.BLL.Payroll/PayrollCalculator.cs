@@ -19,10 +19,8 @@ namespace Company.BLL.Payroll
             _appLogger = pAppLogger;
         }
 
-        public bool GetCalculatedEmployeePayroll(ref EmployeePayrollItem pEmployeeData, out string pMessage)
+        public void CalculateEmployeePayroll(EmployeePayrollItem pEmployeeData, out CalculatedPayrollItem pCalculatedResult)
         {
-            pMessage = string.Empty;
-
             decimal vAnnualSalary = pEmployeeData.AnnualSalary;
             decimal vGrossIncome;
             decimal vIncomeTax;
@@ -43,24 +41,26 @@ namespace Company.BLL.Payroll
                 // Get Super
                 vSuper = GetSuper(vAnnualSalary, pEmployeeData.SuperRate.ToDecimalFromPercentage()).ToRoundedValue();
 
-                pEmployeeData.GrossIncome = vGrossIncome;
-                pEmployeeData.IncomeTax = vIncomeTax;
-                pEmployeeData.NetIncome = vNetIncome;
-                pEmployeeData.Super = vSuper;
+                pCalculatedResult = new CalculatedPayrollItem
+                {
+                    FirstName = pEmployeeData.FirstName,
+                    LastName = pEmployeeData.LastName,
+                    GrossIncome = vGrossIncome,
+                    IncomeTax = vIncomeTax,
+                    NetIncome = vNetIncome,
+                    Super = vSuper
+                };
             }
-            catch (ArgumentException arex)
+            catch (ArgumentException)
             {
-                pMessage = arex.Message;
+                throw;
             }
             catch (Exception ex)
             {
-                pMessage = "Failed to Process Payroll";
-
                 // Do App logging
                 _appLogger.LogError(ex.Message);
+                throw;
             }
-
-            return false;
         }
 
     }

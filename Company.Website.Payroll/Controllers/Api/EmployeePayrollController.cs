@@ -1,4 +1,5 @@
-﻿using Company.BLL.Payroll.Interface;
+﻿using AutoMapper;
+using Company.BLL.Payroll.Interface;
 using Company.Svc.Payroll;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Company.Website.Payroll.ViewModel;
 
 namespace Company.Website.Payroll.Controllers.Api
 {
@@ -30,12 +32,11 @@ namespace Company.Website.Payroll.Controllers.Api
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
 
-                if (!_payrollcalc.GetCalculatedEmployeePayroll(ref employeeRequest, out string pMessage))
-                {
-                    return BadRequest(pMessage);
-                }
+                _payrollcalc.CalculateEmployeePayroll(employeeRequest, out CalculatedPayrollItem pCalculatedItem);
 
-                return Ok(employeeRequest);
+                var employeeOutResult = Mapper.Map<EmployeePayrollResultVM>(pCalculatedItem);
+
+                return Ok(employeeOutResult);
             }
             catch (Exception ex)
             {
@@ -43,12 +44,6 @@ namespace Company.Website.Payroll.Controllers.Api
             }
 
             return BadRequest("Failed to Get Payroll Info.");
-        }
-
-        [HttpGet("")]
-        public IActionResult Get()
-        {
-            return Ok("Test Only");
         }
     }
 }

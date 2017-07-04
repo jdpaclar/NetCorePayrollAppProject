@@ -10,3 +10,15 @@ D:\Development\Interviews\AppPayrollProject\Company.Test.Website.Payroll\obj\Deb
 D:\Development\Interviews\AppPayrollProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.AssemblyInfo.cs
 D:\Development\Interviews\AppPayrollProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.dll
 D:\Development\Interviews\AppPayrollProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Company.Test.Website.Payroll.deps.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Company.Test.Website.Payroll.runtimeconfig.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Company.Test.Website.Payroll.runtimeconfig.dev.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Company.Test.Website.Payroll.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\bin\Debug\netcoreapp1.1\Company.Test.Website.Payroll.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.AssemblyInfo.cs
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Test.Website.Payroll\obj\Debug\netcoreapp1.1\Company.Test.Website.Payroll.csprojResolveAssemblyReference.cache

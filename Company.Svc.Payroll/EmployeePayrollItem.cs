@@ -14,15 +14,11 @@ namespace Company.Svc.Payroll
 
         [MaxLength(250)]
         public string LastName { get; set; }
+        public decimal AnnualSalary { get; set; }
+        public string SuperRate { get; set; }
 
         public string StartDate { get; set; }
-        public string EndDate { get; set; }
 
-        public decimal AnnualSalary { get; set; }
-        public decimal GrossIncome { get; set; }
-        public decimal IncomeTax { get; set; }
-        public decimal NetIncome { get; set; }
-        public string SuperRate { get; set; }
-        public decimal Super { get; set; }
+        public string EndDate { get; set; }
     }
 }

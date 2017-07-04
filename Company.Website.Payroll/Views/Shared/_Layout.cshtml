@@ -38,7 +38,26 @@
         </div>
     </nav>
     <div class="container body-content">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading" style="font-size: large;">
+                    Upload CSV
+                </div>
+                <div class="panel-body">
+                    <form method="post" asp-action="CSVProcess" asp-controller="Home" enctype="multipart/form-data">
+                        <input type="file" name="files" multiple />
+                        <input type="submit" value="Calculate From CSV" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5> - Or - </h5>
+        </div>
+
         @RenderBody()
+
         <hr />
         <footer>
             <p>&copy; 2017 - Payroll App</p>

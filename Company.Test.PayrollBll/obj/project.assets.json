@@ -8678,10 +8678,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Test.PayrollBll\\Company.Test.PayrollBll.csproj",
+      "projectUniqueName": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Test.PayrollBll\\Company.Test.PayrollBll.csproj",
       "projectName": "Company.Test.PayrollBll",
-      "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Test.PayrollBll\\Company.Test.PayrollBll.csproj",
-      "outputPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Test.PayrollBll\\obj\\",
+      "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Test.PayrollBll\\Company.Test.PayrollBll.csproj",
+      "outputPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Test.PayrollBll\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -8689,14 +8689,14 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "D:\\Development\\Interviews\\AppPayrollProject\\Company.BLL.Payroll\\Company.BLL.Payroll.csproj": {
-              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.BLL.Payroll\\Company.BLL.Payroll.csproj"
+            "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.BLL.Payroll\\Company.BLL.Payroll.csproj": {
+              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.BLL.Payroll\\Company.BLL.Payroll.csproj"
             },
-            "D:\\Development\\Interviews\\AppPayrollProject\\Company.Svc.Payroll\\Company.Svc.Payroll.csproj": {
-              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Svc.Payroll\\Company.Svc.Payroll.csproj"
+            "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Svc.Payroll\\Company.Svc.Payroll.csproj": {
+              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Svc.Payroll\\Company.Svc.Payroll.csproj"
             },
-            "D:\\Development\\Interviews\\AppPayrollProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj": {
-              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj"
+            "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj": {
+              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj"
             }
           }
         }

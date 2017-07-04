@@ -20,7 +20,12 @@ namespace Company.Website.Payroll.Controllers
         {
             return View();
         }
-        
+
+        public IActionResult CSVProcess()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

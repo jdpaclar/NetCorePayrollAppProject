@@ -47,8 +47,8 @@ namespace Company.Website.Payroll
         {
             Mapper.Initialize(config =>
             {
-                config.CreateMap<EmployeePayrollItem, EmployeePayrollResultVM>()
-                .ForMember(emp => emp.FullName, opt => opt.MapFrom(src => "{0}".FormatString(src.FirstName, src.LastName)));
+                config.CreateMap<CalculatedPayrollItem, EmployeePayrollResultVM>()
+                .ForMember(emp => emp.FullName, opt => opt.MapFrom(src => "{0} {1}".FormatString(src.FirstName, src.LastName)));
                 //.ForMember(emp => emp.DateRange, opt => opt.MapFrom(src => ))
             });
 

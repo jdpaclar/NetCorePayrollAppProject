@@ -9,6 +9,6 @@ namespace Company.BLL.Payroll.Interface
 {
     public interface IPayrollCalculator
     {
-        bool GetCalculatedEmployeePayroll(ref EmployeePayrollItem pEmployeeData, out string pMessage);
+        void CalculateEmployeePayroll(EmployeePayrollItem pEmployeeData, out CalculatedPayrollItem pCalculatedResult);
     }
 }

@@ -8497,10 +8497,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Test.Website.Payroll\\Company.Test.Website.Payroll.csproj",
+      "projectUniqueName": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Test.Website.Payroll\\Company.Test.Website.Payroll.csproj",
       "projectName": "Company.Test.Website.Payroll",
-      "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Test.Website.Payroll\\Company.Test.Website.Payroll.csproj",
-      "outputPath": "D:\\Development\\Interviews\\AppPayrollProject\\Company.Test.Website.Payroll\\obj\\",
+      "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Test.Website.Payroll\\Company.Test.Website.Payroll.csproj",
+      "outputPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Test.Website.Payroll\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

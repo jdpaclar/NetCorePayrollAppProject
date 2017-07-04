@@ -8,16 +8,6 @@
     <Message Text="********** Publish Ends **********" />
   </Target>
 
-  <!--<Target Name="PublishProjects" AfterTargets="Publish" Outputs="%(ProjectsToPublish.Identity)">
-    <Message Text="********** PublishProjects Begins **********" />
-
-    <MSBuild Projects="@(ProjectsToPublish)" Properties="OutputPath=$(BuildOutputDir)%(ProjectsToPublish.Name);OutDir=$(BuildOutputDir)%(ProjectsToPublish.Name)" StopOnFirstFailure="true" ContinueOnError="false" />
-
-    <Exec Command="XCOPY &quot;$(BuildOutputDir)%(ProjectsToPublish.Name)\*.*&quot; &quot;$(DropsDir)%(ProjectsToPublish.Name)\*.*&quot; /E /Y" />
-
-    <Message Text="********** PublishProjects Ends **********" />
-  </Target>-->
-
   <Target Name="PublishWebProjects" AfterTargets="Publish" Outputs="%(WebProjectsToPublish.Identity)">
     <Message Text="********** PublishWebProjects Begins **********" />
 

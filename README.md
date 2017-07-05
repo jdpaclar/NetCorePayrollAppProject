@@ -27,8 +27,21 @@ Just do regular publish for webprojects on vs2017
 Documentation for installing it on IIS: https://docs.microsoft.com/en-us/aspnet/core/publishing/iis
 
 ## Built With
+BackEnd
 - .Net Core 1.1
+
+Front End
 - AngularJs
+- Bootstrap
+
+Testing
+- Moq
+- xUnitTest
+
+Nuget Packages
+- Basically most of aspnetcore lib
+- Automapper
+
 
 ## Authors
 

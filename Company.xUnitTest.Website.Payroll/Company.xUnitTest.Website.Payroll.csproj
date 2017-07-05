@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>    
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Automapper" Version="6.1.1" />
+    <PackageReference Include="Microsoft.AspnetCore.Http" Version="1.1.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <PackageReference Include="Moq" Version="4.7.63" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Company.BLL.Payroll\Company.BLL.Payroll.csproj" />
+    <ProjectReference Include="..\Company.Common.Utilities\Company.Common.Utilities.csproj" />
+    <ProjectReference Include="..\Company.Svc.Payroll\Company.Svc.Payroll.csproj" />
+    <ProjectReference Include="..\Company.Website.Payroll\Company.Website.Payroll.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+</Project>

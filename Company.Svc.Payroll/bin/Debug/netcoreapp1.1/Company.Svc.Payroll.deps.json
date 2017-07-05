@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "company.svc.payroll/1.0.0": {
+        "dependencies": {
+          "Company.Common.Utilities": "1.0.0"
+        },
         "runtime": {
           "Company.Svc.Payroll.dll": {}
+        }
+      },
+      "company.common.utilities/1.0.0": {
+        "runtime": {
+          "Company.Common.Utilities.dll": {}
         }
       }
     }
   },
   "libraries": {
     "company.svc.payroll/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "company.common.utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

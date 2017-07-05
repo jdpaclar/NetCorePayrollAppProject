@@ -34,7 +34,9 @@ namespace Company.Website.Payroll
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IIncomeTaxFormulaConifg, IncomeTaxFormulaConfig>();
-            services.AddScoped<IPayrollCalculator, PayrollCalculator>();
+
+            services.AddScoped<IEmployeePayrollCalculator, EmployeePayrollCalculator>();
+            services.AddScoped<IPayrollFactory, PayrollFactory>();
 
             services.AddLogging();
 
@@ -48,8 +50,8 @@ namespace Company.Website.Payroll
             Mapper.Initialize(config =>
             {
                 config.CreateMap<CalculatedPayrollItem, EmployeePayrollResultVM>()
-                .ForMember(emp => emp.FullName, opt => opt.MapFrom(src => "{0} {1}".FormatString(src.FirstName, src.LastName)));
-                //.ForMember(emp => emp.DateRange, opt => opt.MapFrom(src => ))
+                .ForMember(emp => emp.FullName, opt => opt.MapFrom(src => "{0} {1}".FormatString(src.FirstName, src.LastName)))
+                .ForMember(emp => emp.PayPeriod, opt => opt.MapFrom(src => "{0} – {1}".FormatString(src.StartDate, src.EndDate)));
             });
 
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));

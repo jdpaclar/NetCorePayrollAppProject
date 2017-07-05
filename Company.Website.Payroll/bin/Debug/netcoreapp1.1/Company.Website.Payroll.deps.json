@@ -1392,6 +1392,7 @@
       },
       "company.svc.payroll/1.0.0": {
         "dependencies": {
+          "Company.Common.Utilities": "1.0.0",
           "Microsoft.NETCore.App": "1.1.2"
         },
         "runtime": {

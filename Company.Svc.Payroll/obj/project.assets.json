@@ -2266,6 +2266,13 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Company.Common.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        }
       }
     }
   },
@@ -7029,10 +7036,16 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "Company.Common.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Company.Common.Utilities/Company.Common.Utilities.csproj",
+      "msbuildProject": "../Company.Common.Utilities/Company.Common.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
+      "Company.Common.Utilities >= 1.0.0",
       "Microsoft.NETCore.App >= 1.1.2"
     ]
   },
@@ -7052,7 +7065,11 @@
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj": {
+              "projectPath": "D:\\Development\\Interviews\\AppPayrollProject\\NetCorePayrollAppProject\\Company.Common.Utilities\\Company.Common.Utilities.csproj"
+            }
+          }
         }
       }
     },

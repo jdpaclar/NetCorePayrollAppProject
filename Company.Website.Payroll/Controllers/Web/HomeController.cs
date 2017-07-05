@@ -4,16 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Company.BLL.Payroll.Interface;
+using Microsoft.AspNetCore.Http;
+using Company.Svc.Payroll;
+using System.IO;
+using Company.Svc.Payroll.Extensions;
+using AutoMapper;
+using Company.Website.Payroll.ViewModel;
+using System.Text;
 
 namespace Company.Website.Payroll.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IPayrollCalculator _payCalc;
+        private readonly IPayrollFactory _payFactory;
 
-        public HomeController(IPayrollCalculator payCalc)
+        public HomeController(IPayrollFactory payFactory)
         {
-            _payCalc = payCalc;
+            _payFactory = payFactory;
         }
 
         public IActionResult Index()
@@ -21,14 +28,31 @@ namespace Company.Website.Payroll.Controllers
             return View();
         }
 
-        public IActionResult CSVProcess()
+        [HttpPost]
+        public IActionResult CSVProcess(IFormFile files)
         {
-            return View();
-        }
+            string vCSVLine;
 
-        public IActionResult Error()
-        {
-            return View();
+            var payrollInputItems = new List<EmployeePayrollItem>();
+
+            IEnumerable<EmployeePayrollResultVM> pResults = null;
+            
+            if (files.Length > 0)
+            {
+                using (var csvReader = new StreamReader(files.OpenReadStream()))
+                {
+                    while ((vCSVLine = csvReader.ReadLine()) != null)
+                    {
+                        payrollInputItems.Add(vCSVLine.ToEmployeePayrollItems());
+                    }
+                }
+
+                var calculatedResults = _payFactory.CalculatePayrollList(payrollInputItems);
+
+                pResults = Mapper.Map<IEnumerable<EmployeePayrollResultVM>>(calculatedResults);
+            }
+
+            return File(new UTF8Encoding().GetBytes(pResults.ToCSVStringFormat()), "text/csv", "Output.csv");
         }
     }
 }

@@ -12,3 +12,5 @@ D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Svc
 D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Svc.Payroll\obj\Debug\netcoreapp1.1\Company.Svc.Payroll.AssemblyInfo.cs
 D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Svc.Payroll\obj\Debug\netcoreapp1.1\Company.Svc.Payroll.dll
 D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Svc.Payroll\obj\Debug\netcoreapp1.1\Company.Svc.Payroll.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Svc.Payroll\bin\Debug\netcoreapp1.1\Company.Common.Utilities.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Svc.Payroll\bin\Debug\netcoreapp1.1\Company.Common.Utilities.pdb

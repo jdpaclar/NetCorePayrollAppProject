@@ -2317,6 +2317,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
+          "Company.Common.Utilities": "1.0.0",
           "Microsoft.NETCore.App": "1.1.2"
         }
       }

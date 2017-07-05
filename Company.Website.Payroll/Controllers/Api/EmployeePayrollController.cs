@@ -15,10 +15,10 @@ namespace Company.Website.Payroll.Controllers.Api
     [Route("/api/payrollcalculate/")]
     public class EmployeePayrollController: Controller
     {
-        private readonly IPayrollCalculator _payrollcalc;
+        private readonly IPayrollFactory _payrollcalc;
         private readonly ILogger<EmployeePayrollController> _logger;
 
-        public EmployeePayrollController(IPayrollCalculator pPayrollCalc, ILogger<EmployeePayrollController> pLogger)
+        public EmployeePayrollController(IPayrollFactory pPayrollCalc, ILogger<EmployeePayrollController> pLogger)
         {
             _payrollcalc = pPayrollCalc;
             _logger = pLogger;
@@ -31,10 +31,10 @@ namespace Company.Website.Payroll.Controllers.Api
             {
                 if (!ModelState.IsValid)
                     return BadRequest(ModelState);
+                
+                var result = _payrollcalc.CalculatePayroll(employeeRequest);
 
-                _payrollcalc.CalculateEmployeePayroll(employeeRequest, out CalculatedPayrollItem pCalculatedItem);
-
-                var employeeOutResult = Mapper.Map<EmployeePayrollResultVM>(pCalculatedItem);
+                var employeeOutResult = Mapper.Map<EmployeePayrollResultVM>(result);
 
                 return Ok(employeeOutResult);
             }

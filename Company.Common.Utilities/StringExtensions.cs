@@ -34,5 +34,58 @@ namespace Company.Common.Utilities
         {
             return DateTime.TryParseExact(pDate, "dd MMMM", null, System.Globalization.DateTimeStyles.None, out DateTime dFormattedDate);
         }
+
+        public static bool IsDateRangeValidFormat(this string pDateRange)
+        {
+            string[] vDateParsed = pDateRange.Split('-');
+
+            if (vDateParsed.Count() > 2)
+                return false;
+
+            if (vDateParsed.Count() == 0)
+                return false;
+
+            foreach (var vDate in vDateParsed)
+            {
+                DateTime vRes;
+
+                if (!DateTime.TryParseExact(vDate, "dd MMMM", null, System.Globalization.DateTimeStyles.None, out vRes))
+                    return false;
+            }
+
+            return true;
+        }
+
+        public static string ToParsedDateStringStartDate(this string vDateEvaluate)
+        {
+            string[] vDateParsed = vDateEvaluate.Split('-');
+
+            if (vDateParsed.Count() == 0)
+                return "";
+
+            foreach (var vDate in vDateParsed)
+            {
+                if (!DateTime.TryParseExact(vDate.Trim(), "dd MMMM", null, System.Globalization.DateTimeStyles.None, out DateTime vRes))
+                    throw new ArgumentException("Date Format is Invalid. {0}", vDate);
+            }
+
+            return vDateParsed[0];
+        }
+
+        public static string ToParsedDateStringEndDate(this string vDateEvaluate)
+        {
+            string[] vDateParsed = vDateEvaluate.Split('-');
+
+            if (vDateParsed.Count() == 1)
+                return "";
+
+            foreach (var vDate in vDateParsed)
+            {
+                if (!DateTime.TryParseExact(vDate.Trim(), "dd MMMM", null, System.Globalization.DateTimeStyles.None, out DateTime vRes))
+                    throw new ArgumentException("Date Format is Invalid. {0}", vDate);
+            }
+
+            return vDateParsed[1];
+        }
     }
 }

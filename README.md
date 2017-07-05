@@ -5,14 +5,17 @@ Simple project written on .NET Core.
 
 
 ### Prerequisites
-Project is written using vs2017 community edition.
+
+Project is written using vs2017 community edition. (or you can use VSCode if you like or on a linux/mac env)
 Postman or any api testing tool (Fiddler.. etc) and example Postman .json located under Company.Svc.Payroll/PostMan
 
 ### Installing
-- Install .net core as part of the installer package for vs2017
+
+- Install .net core as part of the installer package for vs2017 https://www.visualstudio.com/
 
 
 ## Running Tests
+
 Test can be run using the built in Test Explorer in vs2017
 
 There are 2 test projects:
@@ -21,12 +24,14 @@ There are 2 test projects:
 
 
 ## Deployment
+
 Still working on an MSBuild proj file to publish .netCore csproj
 
 Just do regular publish for webprojects on vs2017
 Documentation for installing it on IIS: https://docs.microsoft.com/en-us/aspnet/core/publishing/iis
 
 ## Built With
+
 BackEnd
 - .Net Core 1.1
 

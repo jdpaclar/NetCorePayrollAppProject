@@ -1,0 +1,30 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Test Payroll",
+		"_postman_id": "50537ada-f646-c52d-be97-df4f943ce9dd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:51786/api/payrollcalculate",
+			"request": {
+				"url": "http://localhost:51786/api/payrollcalculate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\": \"John\",\n\t\"LastName\": \"Doe\",\n\t\"DateInput\": \"01 March - 31 March\",\n\t\"AnnualSalary\": 60050,\n\t\"SuperRate\": \"9%\"\n}"
+				},
+				"description": "Test Payroll Calculator Api"
+			},
+			"response": []
+		}
+	]
+}

@@ -47,9 +47,7 @@ namespace Company.Common.Utilities
 
             foreach (var vDate in vDateParsed)
             {
-                DateTime vRes;
-
-                if (!DateTime.TryParseExact(vDate, "dd MMMM", null, System.Globalization.DateTimeStyles.None, out vRes))
+                if (!DateTime.TryParseExact(vDate.Trim(), "dd MMMM", null, System.Globalization.DateTimeStyles.None, out DateTime vRes))
                     return false;
             }
 

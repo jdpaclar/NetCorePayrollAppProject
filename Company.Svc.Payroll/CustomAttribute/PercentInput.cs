@@ -16,6 +16,9 @@ namespace Company.Svc.Payroll.CustomAttribute
 
             if (!string.IsNullOrWhiteSpace(pPercentValue))
             {
+                if (!pPercentValue.Contains("%"))
+                    return false;   
+
                 Regex reg = new Regex(@"^(\d+|\d+[.]\d+)%?$");
                 if (!reg.IsMatch(pPercentValue))
                     return false;

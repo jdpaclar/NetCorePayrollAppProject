@@ -16,7 +16,7 @@ namespace Company.Svc.Payroll.CustomAttribute
 
             if (!string.IsNullOrWhiteSpace(strValue))
             {
-                if (!strValue.IsDateRangeValidFormat())
+               if (!strValue.IsDateRangeValidFormat())
                     return false;
                 else
                     return true;

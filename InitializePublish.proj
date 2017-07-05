@@ -39,12 +39,6 @@
 
 			<!-- Projects To Publish Here -->
 
-			<!--<ProjectsToPublish Include="$(SolutionDir)Company.Website.Payroll\Company.Website.Payroll.csproj">
-				<Name>Company.Website.Payroll</Name>
-				<AdditionalProperties>
-					Configuration=$(Configuration)
-				</AdditionalProperties>
-			</ProjectsToPublish>-->
     
       <WebProjectsToPublish Include="$(SolutionDir)Company.Website.Payroll\Company.Website.Payroll.csproj">
 				<Name>Company.Website.Payroll</Name>

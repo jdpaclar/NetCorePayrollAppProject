@@ -1,6 +1,6 @@
 ﻿(function () {
     "use strict";
 
-    var app = angular.module("payrollApp", ["common.services"]);
+    var app = angular.module("payrollApp", ["ui.bootstrap", "common.services"]);
 
 }());

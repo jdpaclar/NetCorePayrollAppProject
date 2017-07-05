@@ -1,4 +1,4 @@
-﻿<div class="panel panel-primary" ng-controller="payrollCtrl as vm">
+﻿<div class="panel panel-primary" ng-controller="payrollCtrl as vm" >
     <div class="panel-heading" style="font-size: large;">
         Employee Payroll Details
     </div>
@@ -20,12 +20,10 @@
             <input type="text" class="form-control" ng-model="vm.SuperRate" />
         </div>
         <div class="form-group">
-            <label for="StartDate">StartDate</label>
-            <input type="text" class="form-control" ng-model="vm.StartDate" />
+            <label for="StartDate">DateRange</label>
+            <input type="text" class="form-control" ng-model="vm.DateRange" />
         </div>
-        <div class="form-group">
-            <label for="EndDate">EndDate</label>
-            <input type="text" class="form-control" ng-model="vm.EndDate" />
-        </div>
+
+        <button type="button" class="btn btn-primary" ng-click="vm.loadPayroll();">Calculate Payroll</button>
     </div>
 </div>

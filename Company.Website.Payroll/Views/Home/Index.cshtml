@@ -4,13 +4,15 @@
 
 @section Scripts {
     <script src="~/lib/angular/angular.min.js"></script>
-<script src="~/lib/angular-resource/angular-resource.min.js"></script>
+    <script src="~/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="~/lib/angular-resource/angular-resource.min.js"></script>
     <script src="~/js/App/common/common.services.js"></script>
     <script src="~/js/App/payrollApp.js"></script>
     <script src="~/js/App/Payroll/payrollCtrl.js"></script>
+    <script src="~/js/App/Payroll/calculatedPayrollModalCtrl.js"></script>
     <script src="~/js/App/Payroll/payrollResource.js"></script>
 }
 
 <div class="col-md-12" ng-app="payrollApp">
-        <div ng-include="'/js/App/Payroll/payrollView.html'"></div>
+    <div ng-include="'/js/App/Payroll/payrollView.html'"></div>
 </div>

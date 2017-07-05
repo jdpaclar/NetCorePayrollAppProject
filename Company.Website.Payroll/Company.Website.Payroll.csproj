@@ -12,6 +12,8 @@
     <Content Include="Controllers\Web\HomeController.cs" />
     <Content Include="wwwroot\js\App\common\common.services.js" />
     <Content Include="wwwroot\js\App\payrollApp.js" />
+    <Content Include="wwwroot\js\App\Payroll\calculatedPayrollModal.html" />
+    <Content Include="wwwroot\js\App\Payroll\calculatedPayrollModalCtrl.js" />
     <Content Include="wwwroot\js\App\Payroll\payrollCtrl.js" />
     <Content Include="wwwroot\js\App\Payroll\payrollResource.js" />
     <Content Include="wwwroot\js\App\Payroll\payrollView.html" />

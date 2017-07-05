@@ -10,7 +10,9 @@
         var vm = this;
 
         vm.calculatePayroll = function () {
+            vm.loader = true;
 
+            
         }
     }
-})
+}());

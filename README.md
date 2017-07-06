@@ -55,3 +55,8 @@ Nuget Packages
 ## Road Map
 - Add a Data Access Layer using Entity Framework code first approach
 - Add a simple Mobile TACO app (Typescript/Angular/Cordova)
+
+
+## End Note
+If someone can do a refactor of the project, I would love to know how/why you do it!!
+As IT professionals we are always in a state of constant upskilling.

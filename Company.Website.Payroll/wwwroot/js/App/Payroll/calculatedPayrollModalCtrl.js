@@ -7,7 +7,7 @@
 
     function calculatedPayrollModalCtrl($uibModalInstance, calculatedItemResult) {
         var vm = this;
-
+        
         vm.FullName = calculatedItemResult.fullName;
         vm.PayPeriod = calculatedItemResult.payPeriod;
         vm.GrossIncome = calculatedItemResult.grossIncome;

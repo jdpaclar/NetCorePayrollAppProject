@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Company.Common.Utilities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,14 +17,7 @@ namespace Company.Svc.Payroll.CustomAttribute
 
             if (!string.IsNullOrWhiteSpace(pPercentValue))
             {
-                if (!pPercentValue.Contains("%"))
-                    return false;   
-
-                Regex reg = new Regex(@"^(\d+|\d+[.]\d+)%?$");
-                if (!reg.IsMatch(pPercentValue))
-                    return false;
-                else
-                    return true;
+                return pPercentValue.IsValidPercentString();
             }
 
             return false;

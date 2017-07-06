@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Company.Website.Payroll.ViewModel;
+using Microsoft.AspNetCore.Http.Extensions;
 
 namespace Company.Website.Payroll.Controllers.Api
 {
@@ -24,7 +25,7 @@ namespace Company.Website.Payroll.Controllers.Api
             _logger = pLogger;
         }
 
-        [HttpPost("")]
+        [HttpPost()]
         public IActionResult Post([FromBody]EmployeePayrollItem employeeRequest)
         {
             try
@@ -36,7 +37,10 @@ namespace Company.Website.Payroll.Controllers.Api
 
                 var employeeOutResult = Mapper.Map<EmployeePayrollResultVM>(result);
 
-                return Ok(employeeOutResult);
+                // Do Save Database or Whatever
+
+
+                return Created("/", employeeOutResult);
             }
             catch (Exception ex)
             {

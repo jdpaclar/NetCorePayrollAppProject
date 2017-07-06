@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Company.Common.Utilities
@@ -14,8 +15,23 @@ namespace Company.Common.Utilities
             return formattedString;
         }
 
+        public static bool IsValidPercentString(this string pPercentValue)
+        {
+            if (!pPercentValue.Contains("%"))
+                return false;
+
+            Regex reg = new Regex(@"^(\d+|\d+[.]\d+)%?$");
+            if (!reg.IsMatch(pPercentValue))
+                return false;
+            else
+                return true;
+        }
+
         public static decimal ToDecimalFromPercentage(this string vPercentValue)
         {
+            if (!vPercentValue.IsValidPercentString())
+                throw new ArgumentException("Invalid Percent Format.");
+
             return decimal.Parse(vPercentValue.Substring(0, vPercentValue.Length - 1)) / 100;
         }
 

@@ -17,6 +17,7 @@ namespace Company.Svc.Payroll
         [MaxLength(250)]
         public string LastName { get; set; }
 
+        [Range(0, 9999999999999999.99, ErrorMessage = "Salary is not a valid Decimal Value")]
         public decimal AnnualSalary { get; set; }
 
         [PercentInput]

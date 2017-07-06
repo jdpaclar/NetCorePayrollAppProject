@@ -51,7 +51,7 @@ namespace Company.Website.Payroll
             {
                 config.CreateMap<CalculatedPayrollItem, EmployeePayrollResultVM>()
                 .ForMember(emp => emp.FullName, opt => opt.MapFrom(src => "{0} {1}".FormatString(src.FirstName, src.LastName)))
-                .ForMember(emp => emp.PayPeriod, opt => opt.MapFrom(src => "{0} – {1}".FormatString(src.StartDate, src.EndDate)));
+                .ForMember(emp => emp.PayPeriod, opt => opt.MapFrom(src => "{0} - {1}".FormatString(src.StartDate, src.EndDate)));
             });
 
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));

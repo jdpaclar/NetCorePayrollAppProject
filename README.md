@@ -12,10 +12,10 @@ Can upload csv file and calculate each line.
 
 
 ## Input Format
- - CSV
+ - CSV:
 Ryan,Reynolds,125000,10%,01 July - 31 July
 
-- Input Fields
+- Input Fields:
 FirstName - string
 LastName - string
 AnnualSalary - numerice/decimal

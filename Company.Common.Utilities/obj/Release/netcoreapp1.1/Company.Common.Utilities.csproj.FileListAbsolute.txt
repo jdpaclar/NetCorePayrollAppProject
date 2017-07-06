@@ -5,3 +5,10 @@ D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Release
 D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.AssemblyInfo.cs
 D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.dll
 D:\Development\Interviews\AppPayrollProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\bin\Release\netcoreapp1.1\Company.Common.Utilities.deps.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\bin\Release\netcoreapp1.1\Company.Common.Utilities.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\bin\Release\netcoreapp1.1\Company.Common.Utilities.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.csprojResolveAssemblyReference.cache
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.AssemblyInfo.cs
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Common.Utilities\obj\Release\netcoreapp1.1\Company.Common.Utilities.pdb

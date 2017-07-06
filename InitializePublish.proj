@@ -1,7 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" InitialTargets="InitializePublish" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<Target Name="InitializePublish">
-		<Message Text="********** InitializePublish Begins **********" />
+
+    <PropertyGroup>
+      <TargetFramework>netcoreapp1.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+      <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    </ItemGroup>
+
+    <Message Text="********** InitializePublish Begins **********" />
 
 		<PropertyGroup>
 			<PublishProfile>$(PublishProfile)</PublishProfile>

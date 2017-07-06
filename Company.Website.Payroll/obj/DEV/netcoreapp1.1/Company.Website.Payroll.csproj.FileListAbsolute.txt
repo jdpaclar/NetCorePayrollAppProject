@@ -1,0 +1,9 @@
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\_BuildOutput\DEV\Company.Website.Payroll\Company.Website.Payroll.deps.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\_BuildOutput\DEV\Company.Website.Payroll\Company.Website.Payroll.runtimeconfig.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\_BuildOutput\DEV\Company.Website.Payroll\Company.Website.Payroll.runtimeconfig.dev.json
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\_BuildOutput\DEV\Company.Website.Payroll\Company.Website.Payroll.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\_BuildOutput\DEV\Company.Website.Payroll\Company.Website.Payroll.pdb
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Website.Payroll\obj\DEV\netcoreapp1.1\Company.Website.Payroll.csprojResolveAssemblyReference.cache
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Website.Payroll\obj\DEV\netcoreapp1.1\Company.Website.Payroll.AssemblyInfo.cs
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Website.Payroll\obj\DEV\netcoreapp1.1\Company.Website.Payroll.dll
+D:\Development\Interviews\AppPayrollProject\NetCorePayrollAppProject\Company.Website.Payroll\obj\DEV\netcoreapp1.1\Company.Website.Payroll.pdb

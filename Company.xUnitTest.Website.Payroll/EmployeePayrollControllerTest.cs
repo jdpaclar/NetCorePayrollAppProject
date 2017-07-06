@@ -65,46 +65,15 @@ namespace Company.xUnitTest.Website.Payroll
         }
 
         [Fact]
-        public void CSVUploadIsProvidedWithWrongFormat()
-        {
-            var fileMock = new Mock<IFormFile>();
-
-            var ms = new MemoryStream();
-            var writer = new StreamWriter(ms);
-            string csvLine = "David,Rudd,asdasd,asdasd,01 March – 31 March";
-
-            writer.Write(csvLine);
-            writer.Flush();
-
-            ms.Position = 0;
-
-            fileMock.Setup(x => x.FileName).Returns("Input.csv");
-            fileMock.Setup(x => x.OpenReadStream()).Returns(ms);
-            fileMock.Setup(x => x.Length).Returns(ms.Length);
-
-            Mock<IPayrollFactory> payrollFactory = new Mock<IPayrollFactory>();
-
-            payrollFactory.Setup(x => x.CalculatePayrollList(new List<EmployeePayrollItem>
-            {
-                csvLine.ToEmployeePayrollItems()
-            }));
-
-            var empController = new EmployeeController(payrollFactory.Object);
-
-            var result = empController.CSVProcess(fileMock.Object);
-
-            var viewResult = Assert.IsType<RedirectToActionResult>(result);
-
-            Assert.Equal("Error", viewResult.ControllerName);
-        }
-
-        [Fact]
-        public void CalclatePayrollActionReturnsIsSuccessFalse()
+        public void CalclatePayrollActionReturnsJsonResult()
         {
             var employeePayrollItem = new EmployeePayrollItem
             {
-                FirstName = "",
-                SuperRate = "asdasdasd" // Invalid Format
+                FirstName = "John",
+                LastName = "aa",
+                SuperRate = "9%",
+                AnnualSalary = 65000m,
+                DateInput = "01 March - 31 March"
             };
 
             Mock<IPayrollFactory> payrollFactory = new Mock<IPayrollFactory>();
@@ -115,7 +84,7 @@ namespace Company.xUnitTest.Website.Payroll
 
             var viewRes = Assert.IsType<JsonResult>(empController.CalculateEmployeePayroll(employeePayrollItem));
 
-            //Assert.False(viewRes.)
+            Assert.IsType<CalculateEmployeePayrollResponse>(viewRes.Value);
         }
     }
 }

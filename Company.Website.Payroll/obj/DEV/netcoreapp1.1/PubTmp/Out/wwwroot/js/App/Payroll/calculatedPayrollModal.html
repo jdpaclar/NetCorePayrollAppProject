@@ -1,0 +1,18 @@
+﻿<div ng-contrller="calculatedPayrollModalCtrl as vm">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="vm.close()">&times;</button>
+        <h4 class="modal-title">Calculated Payroll for {{ vm.FullName }} </h4>
+    </div>
+    <div class="modal-body">
+        
+        <p><b>Pay Period</b>: {{ vm.PayPeriod }}</p>
+        <p><b>Gross Income</b>: {{ vm.GrossIncome }}</p>
+        <p><b>Income Tax</b>: {{ vm.IncomeTax }}</p>
+        <p><b>Net Income</b>: {{ vm.NetIncome }}</p>
+        <p><b>Super</b>: {{ vm.Super }}</p>
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="vm.close()">Close</button>
+    </div>
+</div>

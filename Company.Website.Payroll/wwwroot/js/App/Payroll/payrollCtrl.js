@@ -29,7 +29,7 @@
                 controller: 'calculatedPayrollModalCtrl',
                 controllerAs: 'vm',
                 resolve: {
-                    detailItems: function() {
+                    calculatedItemResult: function() {
                         return calculatedPayroll;
                     }
                 }

@@ -45,7 +45,7 @@ There are 2 test projects:
 
 ## Deployment
 
-Still working on an MSBuild proj file to publish .netCore csproj
+Still working on an MSBuild proj file to publish .netCore csproj. Or perhaps just do a dotnet publish
 
 Just do regular publish for webprojects on vs2017
 Documentation for installing it on IIS: https://docs.microsoft.com/en-us/aspnet/core/publishing/iis

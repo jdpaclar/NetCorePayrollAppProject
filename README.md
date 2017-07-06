@@ -3,6 +3,14 @@ Simple project written on .NET Core.
 
 ## Getting Started
 Main application for this sample is an AspNetCore MVC project.
+Has a basic form and produce a calculated payroll displayed in a modal.
+Can upload csv file and calculate each line.
+
+## Screens
+![Alt text](/imgscreen1.png?raw=true "Screen1")
+![Alt text](/imgscreen2.png?raw=true "Screen2")
+
+
 
 ### Prerequisites
 

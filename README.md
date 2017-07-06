@@ -12,7 +12,6 @@ Can upload csv file and calculate each line.
 
 
 ## Input Format - CSV
-Paul,Rudd,60051,9%,01 July - 31 July
 Ryan,Reynolds,125000,10%,01 July - 31 July
 
 

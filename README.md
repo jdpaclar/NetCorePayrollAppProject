@@ -64,7 +64,7 @@ Testing
 - xUnitTest
 
 Nuget Packages
-- Basically most of aspnetcore lib
+- Basically some of aspnetcore lib
 - Automapper
 
 

@@ -2,11 +2,11 @@
 Simple project written on .NET Core.
 
 ## Getting Started
-
+Main application for this sample is an AspNetCore MVC project.
 
 ### Prerequisites
 
-Project is written using vs2017 community edition. (or you can use VSCode if you like or on a linux/mac env).
+Project is written using vs2017 community edition. (or you can use VSCode if you like or on a linux/mac env haven't tried it to be honest).
 Postman or any api testing tool (Fiddler.. etc) and example Postman .json located under Company.Svc.Payroll/PostMan
 
 ### Installing

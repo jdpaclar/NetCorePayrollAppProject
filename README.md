@@ -6,7 +6,7 @@ Simple project written on .NET Core.
 
 ### Prerequisites
 
-Project is written using vs2017 community edition. (or you can use VSCode if you like or on a linux/mac env)
+Project is written using vs2017 community edition. (or you can use VSCode if you like or on a linux/mac env).
 Postman or any api testing tool (Fiddler.. etc) and example Postman .json located under Company.Svc.Payroll/PostMan
 
 ### Installing

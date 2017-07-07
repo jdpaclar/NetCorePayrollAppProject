@@ -3,6 +3,26 @@ Simple project written on .NET Core.
 
 ## Getting Started
 Main application for this sample is an AspNetCore MVC project.
+Has a basic form and produce a calculated payroll displayed in a modal.
+Can upload csv file and calculate each line.
+
+## Screens
+![Alt text](/imgscreen1.png?raw=true "Screen1")
+![Alt text](/imgscreen2.png?raw=true "Screen2")
+
+
+## Input Format
+ - CSV:
+Ryan,Reynolds,125000,10%,01 July - 31 July
+
+- Input Fields:
+FirstName - string
+LastName - string
+AnnualSalary - numerice/decimal
+Super - string (percent format)
+DateInput - string (dd MMMM - dd MMMM)
+
+
 
 ### Prerequisites
 
@@ -25,7 +45,7 @@ There are 2 test projects:
 
 ## Deployment
 
-Still working on an MSBuild proj file to publish .netCore csproj
+Still working on an MSBuild proj file to publish .netCore csproj. Or perhaps just do a dotnet publish
 
 Just do regular publish for webprojects on vs2017
 Documentation for installing it on IIS: https://docs.microsoft.com/en-us/aspnet/core/publishing/iis
@@ -44,7 +64,7 @@ Testing
 - xUnitTest
 
 Nuget Packages
-- Basically most of aspnetcore lib
+- Basically some of aspnetcore lib
 - Automapper
 
 
